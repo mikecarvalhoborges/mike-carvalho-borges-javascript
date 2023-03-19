@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoisJavascript</title>
+    <script>
+        var numeros = []
+
+        var num1 = Number.parseInt(prompt('digite um número: '))
+        numeros.push(num1)
+
+        var num2 = Number.parseInt(prompt('digite outro número: '))
+        numeros.push(num2)
+
+        var num3 = Number.parseInt(prompt('digite outro número: '))
+        numeros.push(num3)
+
+        var num4 = Number.parseInt(prompt('digite outro número: '))
+        numeros.push(num4)
+
+        var num5 = Number.parseInt(prompt('digite só mais outro número: '))
+        numeros.push(num5)
+
+        var maximo = Math.max(...numeros)
+        var minimo = Math.min(...numeros)
+
+        document.write('O valor máximo é: ' + maximo)
+        document.write('<br>')
+        document.write(' O valor mínimo é: ' + minimo)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
