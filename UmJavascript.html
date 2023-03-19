@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmJavascript</title>
+    <script>
+        var pares = []
+        var impares = []
+
+        var num1 = Number.parseInt(prompt('digite um número: '))
+        var num2 = Number.parseInt(prompt('digite outro número: '))
+        var num3 = Number.parseInt(prompt('digite outro número: '))
+        var num4 = Number.parseInt(prompt('digite outro número: '))
+        var num5 = Number.parseInt(prompt('digite só mais outro número: '))
+        
+        if ((num1 % 2) == 0) {
+            pares.push(num1)
+        } else {
+            impares.push(num1)
+        }
+
+        if ((num2 % 2) == 0) {
+            pares.push(num2)
+        } else {
+            impares.push(num2)
+        }
+
+        if ((num3 % 2) == 0) {
+            pares.push(num3)
+        } else {
+            impares.push(num3)
+        }
+
+        if ((num4 % 2) == 0) {
+            pares.push(num4)
+        } else {
+            impares.push(num4)
+        }
+
+        if ((num5 % 2) == 0) {
+            pares.push(num5)
+        } else {
+            impares.push(num5)
+        }
+        
+        var soma1 = 0
+        var soma2 = 0
+
+        for (var i = 0; i < pares.length; i++) {
+        soma1 += pares[i];
+        }
+
+        for (var j = 0; j < impares.length; j++) {
+        soma2 += impares[j];
+        }
+
+        var media = soma1 + soma2 / 5
+
+        document.write ('Números pares: ' + pares)
+        document.write (' Números ímpares: ' + impares)
+        document.write (' Média geral: ' + media)
+    </script>
+</head>
+<body>
+</body>
+</html>
