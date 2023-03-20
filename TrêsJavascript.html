@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrêsJavascript</title>
+    <script>
+       
+        while (true) {
+            var nome = window.prompt('Qual o seu nome? ')
+            
+            var notas = []
+        
+            var nota1 = Number.parseInt(prompt('Digite a primeira nota: '))
+            notas.push(nota1)
+
+            var nota2 = Number.parseInt(prompt('Digite a segunda nota: '))
+            notas.push(nota2)
+
+            var nota3 = Number.parseInt(prompt('Digite a terceira nota: '))
+            notas.push(nota3)
+
+            var nota4 = Number.parseInt(prompt('Digite a quarta nota: '))
+            notas.push(nota4)
+
+            var soma = 0
+            var media = 0
+            for (var n in notas) {
+                soma += notas[n]
+                media = soma / 4
+            }
+
+            window.alert('Seu nome é ' + nome + ' e sua média é '+ media + '.')
+            if (media < 6) {
+                window.alert('Reprovado')
+            } else if (media >= 6){
+                window.alert('Aprovado')
+            }
+
+            var continuar = window.confirm('Deseja continuar?')
+            if (continuar == false ) {
+                break
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
